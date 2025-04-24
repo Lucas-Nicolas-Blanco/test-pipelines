@@ -1,0 +1,7 @@
+on: [push]
+
+jobs:
+  test_pipeline:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "adios"
