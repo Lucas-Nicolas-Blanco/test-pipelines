@@ -1,7 +1,10 @@
-on: [push]
+on:
+  push:
+    branches:
+      - main
 
 jobs:
   test_pipeline:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "adios"
+      - run: docker build . -t lucasnicolas/hola
