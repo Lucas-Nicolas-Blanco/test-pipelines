@@ -10,4 +10,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
 
-      - run: docker build . -t lucasnicolas/hola
+      - name: Test echo secret
+        run: echo ${{secrets.SECRET_VALUE}}
+
+#      - name: Login Dockerhub
+#        run:  echo secrest{{}}docker login --username ${{secrets.DOCKER_HUB_USERNAME}}
+#
+#      - name: Build Dockerfile
+#        run: docker build . -t lucasnicolas/hola
+#
+#      - name: Push to Dockerhub
+#        run: docker push ${{secrets.DOCKER_USER}}
