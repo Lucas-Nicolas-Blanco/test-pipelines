@@ -21,8 +21,7 @@ from django.urls import path
 
 
 def example(request):
-    print("changed")
-    return JsonResponse({"Changed pipeline": 1})
+    return JsonResponse({"Example number 9000": 9000})
 
 urlpatterns = [
     path("", example)

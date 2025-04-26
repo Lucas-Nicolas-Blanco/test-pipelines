@@ -6,7 +6,6 @@ services:
     environment:
       WATCHTOWER_POLL_INTERVAL: 60
       container_to_watch: django-app
-      WATCHTOWER_NO_PULL: true
 
 
   django-app:
